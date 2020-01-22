@@ -8,18 +8,10 @@ public class Character : MonoBehaviour
     public int stamina;
     public int currentAmmo;
     public int fullAmmo;
-    public Light lightOne;
-    public Light lightTwo;
-    public Light lightThree;
-    public Light lightFour;
-    public Light lightFive;
-    public Light lightSix;
-    private bool lightOn = false;
+    public Light flashLight;
 
     void Start()
     {
-        //GetComponent<Light>();
-        print("Hello World!");
         life = 10;
         stamina = 10;
         fullAmmo = 5;
@@ -52,27 +44,15 @@ public class Character : MonoBehaviour
 
         if (Input.GetKeyDown("f"))
         {
-            if (lightOn == false)
+            if (flashLight.enabled == false)
             {
-                lightOne.intensity = 1;
-                lightTwo.intensity = 1;
-                lightThree.intensity = 1;
-                lightFour.intensity = 1;
-                lightFive.intensity = 1;
-                lightSix.intensity = 1;
+                flashLight.enabled = true;
                 print("Let there be light!");
-                lightOn = true;
             }
             else
             {
-                lightOne.intensity = 0;
-                lightTwo.intensity = 0;
-                lightThree.intensity = 0;
-                lightFour.intensity = 0;
-                lightFive.intensity = 0;
-                lightSix.intensity = 0;
+                flashLight.enabled = false;
                 print("Be gone, light!");
-                lightOn = false;
             }
             
         }
