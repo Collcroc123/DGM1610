@@ -401,6 +401,7 @@ GameObject:
   - component: {fileID: 1147684881}
   - component: {fileID: 1147684880}
   - component: {fileID: 1147684879}
+  - component: {fileID: 1147684884}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -424,29 +425,7 @@ MonoBehaviour:
   scoreValue: 0
   uEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1147684878}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 226701316}
-        m_MethodName: set_intensity
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!65 &1147684880
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -521,3 +500,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1147684884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147684878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f508213e4791b1489a46715ad2a8670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  weight: 0
+  lifespan: 0
+  speed: 0
+  size: 0
+  canRun: 0
+  canSwim: 0
+  canFly: 0
