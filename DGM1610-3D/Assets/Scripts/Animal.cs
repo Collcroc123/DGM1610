@@ -35,8 +35,45 @@ public class Cat : Animal
 
     void Start()
     {
-        float weight = Random.Range(7.9f, 9.9f);
+        float weight = Random.Range(5f, 30f);
+        if (weight < 5)
+        {
+            size = 1;
+            print("This animal's weight is Light");
+        }
+        else if (weight >= 5 && weight < 10)
+        {
+            size = 2;
+            print("This animal's weight is Medium");
+        }
+        else if (weight >= 10 && weight < 20)
+        {
+            size = 3;
+            print("This animal's weight is Heavy");
+        }
+        else if (weight >= 20 && weight <= 30)
+        {
+            size = 4;
+            print("This animal's weight is Obese");
+        }
+        else
+        {
+            print("This animal's weight is out of bounds!");
+        }
+
         int lifespan = Random.Range(2, 16);
+        if (lifespan <= 5)
+        {
+            print("This animal died young");
+        }
+        else if (lifespan > 5 && lifespan <= 10)
+        {
+            print("This animal lived a decent life");
+        }
+        else if (lifespan > 10)
+        {
+            print("This animal lived a long and fufilling life");
+        }
     }
 
     void Update()
@@ -100,4 +137,13 @@ public class Dog : Animal
     {
         
     }
+}
+
+public class Bird : Animal
+{
+    int health = 50;
+    int speed = 5;
+    bool canRun = false;
+    bool canSwim = true;
+    bool canFly = true;
 }

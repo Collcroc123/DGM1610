@@ -7,6 +7,17 @@ public class Items : MonoBehaviour
     bool increaseSize;
     bool healsPlayer;
     bool savesGame;
+    public Script characterScript;
+
+    void Start()
+    {
+        //Get Script Component
+    }
+
+    void Update()
+    {
+
+    }
 }
 
 public class Health : Items
@@ -14,6 +25,8 @@ public class Health : Items
     bool healsPlayer = true;
     bool increaseSize = false;
     bool savesGame = false;
+
+    //
 }
 
 public class Powerup : Items
@@ -21,6 +34,8 @@ public class Powerup : Items
     bool healsPlayer = false;
     bool increaseSize = true;
     bool savesGame = false;
+
+    //
 }
 
 public class Checkpoint : Items
@@ -28,4 +43,6 @@ public class Checkpoint : Items
     bool healsPlayer = false;
     bool increaseSize = true;
     bool savesGame = true;
+
+    //
 }
