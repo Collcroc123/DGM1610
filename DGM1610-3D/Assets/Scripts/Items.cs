@@ -7,7 +7,7 @@ public class Items : MonoBehaviour
     bool increaseSize;
     bool healsPlayer;
     bool savesGame;
-    public Script characterScript;
+    //public Script characterScript;
 
     void Start()
     {
