@@ -19,7 +19,7 @@ public class Items : MonoBehaviour
 
     }
 }
-
+/*
 public class Health : Items
 {
     bool healsPlayer = true;
@@ -46,3 +46,4 @@ public class Checkpoint : Items
 
     //
 }
+*/

@@ -10,6 +10,16 @@ public class MouseEvents : MonoBehaviour
         mouseDownEvent.Invoke();
     }
 
+    private void OnMouseUp()
+    {
+        mouseUpEvent.Invoke();
+    }
+    /*
+    private void OnMouseDrag()
+    {
+        mouseHoldEvent.Invoke();
+    }
+    */
     private void OnMouseEnter()
     {
         mouseEnterEvent.Invoke();
@@ -17,11 +27,13 @@ public class MouseEvents : MonoBehaviour
 
     private void OnMouseExit()
     {
-        mouseExitEvent.Invoke();
-    }
-
-    private void OnMouseUp()
-    {
-        mouseUpEvent.Invoke();
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            mouseDownEvent.Invoke();
+        }
+        else
+        {
+            mouseExitEvent.Invoke();
+        }
     }
 }

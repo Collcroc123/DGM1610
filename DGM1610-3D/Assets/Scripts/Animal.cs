@@ -24,7 +24,7 @@ public class Animal : MonoBehaviour
         
     }
 }
-
+/*
 public class Cat : Animal
 {
     int health = 80; 
@@ -147,3 +147,4 @@ public class Bird : Animal
     bool canSwim = true;
     bool canFly = true;
 }
+*/
