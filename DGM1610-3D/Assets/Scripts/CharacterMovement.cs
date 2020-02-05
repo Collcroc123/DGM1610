@@ -7,6 +7,8 @@ public class CharacterMovement : MonoBehaviour
     private float gravity = -0.5f;
     public float speed = 5f;
     public float jumpForce = 10f;
+    private int maxJump = 2;
+    private int currentJump = 1;
 
     void Start()
     {
@@ -20,9 +22,17 @@ public class CharacterMovement : MonoBehaviour
         positionDirection.z = Input.GetAxis("Horizontal")*-speed;
         controller.Move(positionDirection*Time.deltaTime);
 
-        if(Input.GetButtonDown("Jump") && controller.isGrounded)
+        if(Input.GetButtonDown("Jump"))
         {
-            positionDirection.y = jumpForce;
+            if(currentJump < maxJump)
+            {
+                positionDirection.y = jumpForce;
+                currentJump++;
+            }
+        }
+        if(controller.isGrounded)
+        {
+            currentJump = 1;
         }
 
         if (Input.GetButton("Run"))
