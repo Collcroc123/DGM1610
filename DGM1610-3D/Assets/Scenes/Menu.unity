@@ -299,6 +299,7 @@ GameObject:
   - component: {fileID: 865770896}
   - component: {fileID: 865770895}
   - component: {fileID: 865770894}
+  - component: {fileID: 865770897}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -369,15 +370,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 102900000, guid: 8c63af7715bc47a4482219aba53e512d, type: 3}
-        m_MethodName: set_name
-        m_Mode: 5
+      - m_Target: {fileID: 865770897}
+        m_MethodName: OnClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Tutorial
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &865770895
@@ -416,6 +417,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865770892}
   m_CullTransparentMesh: 0
+--- !u!114 &865770897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865770892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc470e514e967984ba4d4e1f3bf6e11a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionFade: {fileID: 1571167617}
+  transTime: 1
 --- !u!1 &1112980443
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,6 +623,12 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 10
   m_TargetDisplay: 0
+--- !u!95 &1571167617 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5384839115170584304, guid: 6dd747f44cb58134291a2909c64296dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 5384839115426007783}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1586660464
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,6 +955,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 5384839115170222994, guid: 6dd747f44cb58134291a2909c64296dc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dd747f44cb58134291a2909c64296dc, type: 3}

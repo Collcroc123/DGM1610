@@ -9,19 +9,16 @@ public class CharacterMovement : MonoBehaviour
     public float jumpForce = 10f;
     private int maxJump = 2;
     private int currentJump = 1;
-
-    void Start()
-    {
-        
-    }
-
+    
     void Update()
     {
+        //Moving
         positionDirection.x = Input.GetAxis("Vertical")*speed;
         positionDirection.y += gravity;
         positionDirection.z = Input.GetAxis("Horizontal")*-speed;
         controller.Move(positionDirection*Time.deltaTime);
 
+        //Jumping
         if(Input.GetButtonDown("Jump"))
         {
             if(currentJump < maxJump)
@@ -35,6 +32,7 @@ public class CharacterMovement : MonoBehaviour
             currentJump = 1;
         }
 
+        //Running
         if (Input.GetButton("Run"))
         {
             speed = 10f;

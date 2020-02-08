@@ -7,18 +7,22 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour
 {
     //Brackeys' Transition tutorial
-    public Button play;
-    private int currentScene = SceneManager.GetActiveScene().buildIndex;
+    private int currentScene;
     public Animator transitionFade;
     public float transTime = 1;
+
+    void Start()
+    {
+        currentScene = SceneManager.GetActiveScene().buildIndex;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        play.onClick.AddListener(OnClick);
+
     }
 
-    void OnClick()
+    public void OnClick()
     {
         StartCoroutine(LoadLevel());
     }
@@ -27,6 +31,6 @@ public class LevelLoader : MonoBehaviour
     {
         transitionFade.SetTrigger("Start");
         yield return new WaitForSeconds(transTime);
-        SceneManager.LoadScene(currentScene++);
+        SceneManager.LoadScene(currentScene+1);
     }
 }
