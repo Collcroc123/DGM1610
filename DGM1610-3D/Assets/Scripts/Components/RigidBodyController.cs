@@ -2,7 +2,7 @@
 
 [RequireComponent(typeof(Rigidbody))]
 
-public class RigidBodyForces : MonoBehaviour
+public class RigidBodyController : MonoBehaviour
 {
     private Rigidbody rigidBodyObj;
     public float force = 100;
