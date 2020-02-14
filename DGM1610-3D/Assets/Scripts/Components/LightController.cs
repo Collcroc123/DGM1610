@@ -26,5 +26,13 @@ public class LightController : MonoBehaviour
         {
             coolLight.color = Color.yellow;
         }
+        if (Input.GetKeyDown("a"))
+        {
+            coolLight.color = Color.green;
+        }
+        if(Input.GetKeyDown("d"))
+        {
+            coolLight.color = Color.red;
+        }
     }
 }

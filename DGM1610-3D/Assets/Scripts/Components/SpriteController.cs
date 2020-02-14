@@ -13,16 +13,6 @@ public class SpriteController : MonoBehaviour
         characterSprite = GetComponent<SpriteRenderer>();
     }
 
-    private void OnEnable()
-    {
-        characterSprite.color = Color.green;
-    }
-
-    private void OnDisable()
-    {
-        characterSprite.color = Color.red;
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -33,6 +23,14 @@ public class SpriteController : MonoBehaviour
         if (Input.GetKeyDown("s"))
         {
             characterSprite.color = Color.yellow;
+        }
+        if (Input.GetKeyDown("a"))
+        {
+            characterSprite.color = Color.green;
+        }
+        if(Input.GetKeyDown("d"))
+        {
+            characterSprite.color = Color.red;
         }
     }
 }
