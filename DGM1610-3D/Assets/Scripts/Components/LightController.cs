@@ -12,7 +12,7 @@ public class LightController : MonoBehaviour
     {
         coolLight = GetComponent<Light>();
         //coolCamera = GetComponent<Camera>();
-        coolLight.color = Color.red;
+        coolLight.color = Color.white;
     }
 
     // Update is called once per frame
