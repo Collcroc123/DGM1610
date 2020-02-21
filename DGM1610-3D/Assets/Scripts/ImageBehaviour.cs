@@ -16,6 +16,10 @@ public class ImageBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(floatData--)
+        {
+            //https://forum.unity.com/threads/how-to-change-the-size-of-a-ui-image-from-code-trying-to-make-a-simple-healthbar-from-this.265024/
+            //coolImage.rectTransform.sizeDelta = new Vector2(width, height);
+        }
     }
 }
