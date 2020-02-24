@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Image))]
-public class ImageBehaviour : MonoBehaviour
+[RequireComponent(typeof(Text))]
+public class TextBehaviour : MonoBehaviour
 {
-    private Image image;
-    public FloatData dataObj;
+    private Text text;
+    public IntData dataObj;
 
     // Start is called before the first frame update
     void Start()
     {
-        image = GetComponent<Image>();
+        text = GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        image.fillAmount = dataObj.value;
+        text.text = dataObj.value.ToString();
     }
 }
