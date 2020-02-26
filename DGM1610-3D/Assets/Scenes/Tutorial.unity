@@ -1390,7 +1390,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2b7b5e17c3c4ef74fb5564c6362899d4, type: 2}
+  - {fileID: 2100000, guid: f27e53e072ed6e545a938653b99daf86, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2256,7 +2256,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441827880}
-  m_LocalRotation: {x: 0.28026, y: 3.644044e-15, z: -8.800649e-15, w: 0.95992416}
+  m_LocalRotation: {x: 0.28026, y: 9.133024e-17, z: -7.0242913e-15, w: 0.95992416}
   m_LocalPosition: {x: 0, y: 3.83, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -5385,6 +5385,17 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 10
           m_FloatArgument: 0.1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1194509147}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -11321,7 +11332,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677939472}
-  m_LocalRotation: {x: 0.28026, y: 3.644044e-15, z: -8.800649e-15, w: 0.95992416}
+  m_LocalRotation: {x: 0.28026, y: 9.133024e-17, z: -7.0242913e-15, w: 0.95992416}
   m_LocalPosition: {x: 0, y: 3.83, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
