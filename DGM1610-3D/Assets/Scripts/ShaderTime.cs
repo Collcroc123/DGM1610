@@ -26,6 +26,6 @@ public class ShaderTime : MonoBehaviour
         }
 
         //gameObject.GetComponent<Renderer>().sharedMaterial.SetFloat("_fade", fade);
-        material.SetFloat("_fade", fade);
+        //material.SetFloat("_fade", fade);
     }
 }
