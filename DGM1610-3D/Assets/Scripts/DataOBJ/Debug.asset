@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ec9f0da9ff36a643bf055a019a60c8d, type: 3}
-  m_Name: Ammo
+  m_Script: {fileID: 11500000, guid: f3564060a52c8f648a39c58ba20038f0, type: 3}
+  m_Name: Debug
   m_EditorClassIdentifier: 
-  value: 1
