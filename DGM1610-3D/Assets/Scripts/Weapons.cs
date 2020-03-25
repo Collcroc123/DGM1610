@@ -1,10 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 public class Weapons : MonoBehaviour
 {
-    public enum weaponsList
+    public enum WeaponsList
     {
         pistol,
         shotgun,
@@ -14,7 +13,7 @@ public class Weapons : MonoBehaviour
         grenade
     }
 
-    public weaponsList currentWeapon;
+    public WeaponsList currentWeapon;
 
     // Start is called before the first frame update
     void Start()
@@ -27,17 +26,17 @@ public class Weapons : MonoBehaviour
     {
         switch (currentWeapon)
         {
-            case currentWeapon.pistol:
+            case WeaponsList.pistol:
                 break;
-            case currentWeapon.shotgun:
+            case WeaponsList.shotgun:
                 break;
-            case currentWeapon.sniper:
+            case WeaponsList.sniper:
                 break;
-            case currentWeapon.assault_rifle:
+            case WeaponsList.assault_rifle:
                 break;
-            case currentWeapon.knife:
+            case WeaponsList.knife:
                 break;
-            case currentWeapon.grenade:
+            case WeaponsList.grenade:
                 break;
             default:
                 break;
